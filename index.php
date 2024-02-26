@@ -37,12 +37,12 @@
         <!-- aggiungo il form -->
         <form method="GET" >
             <select name="parking" id="parking-zone" class="form-select w-25 mt-3">
-                <option selected>Parcheggio:</option>
-                <option value="true">si</option>
-                <option value="false">no</option>
+                <option selected></option>
+                <option value= true>si</option>
+                <option value= false >no</option>
             </select>
             <select name="vote" id="vote_hotel" class="form-select w-25 mt-3">
-                <option selected>Voto:</option>
+                <option selected></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
