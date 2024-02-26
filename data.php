@@ -44,4 +44,10 @@
 
     ];
 
+    //opzioni filtro per la selezione 
+    $parking_zone = $_GET['parking'];
+    $vote_hotel = $_GET['vote'];
+
+    var_dump($parking_zone);
+    var_dump($vote_hotel);
 ?>
