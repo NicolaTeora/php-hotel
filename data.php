@@ -1,10 +1,12 @@
-<!-- Lista hotel del link assegnato -->
+<!-- Lista hotel del link -->
 
 <?php
-
-    $hotels = [
-
+    // Array multidimensionali
+    //Primo livello
+    $hotels = [ 
+        //Secondo Livello
         [
+            //'indice' => 'valore'
             'name' => 'Hotel Belvedere',
             'description' => 'Hotel Belvedere Descrizione',
             'parking' => true,
