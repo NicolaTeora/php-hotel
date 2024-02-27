@@ -35,14 +35,14 @@
         <hr>
 
         <!-- aggiungo il form -->
-        <form method="GET" >
+        <form method="GET" action="./index.php" >
             <select name="parking" id="parking-zone" class="form-select w-25 mt-3">
-                <option selected></option>
+                <option selected value= "all">Parcheggio:</option>
                 <option value= true>si</option>
                 <option value= false >no</option>
             </select>
             <select name="vote" id="vote_hotel" class="form-select w-25 mt-3">
-                <option selected></option>
+                <option selected value= "0">Voto:</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -50,7 +50,7 @@
                 <option value="5">5</option>
             </select>
 
-            <button  class="btn btn-success">Cerca</button>
+            <button type="submit" class="btn btn-success">Cerca</button>
 
         </form>
         
@@ -68,7 +68,8 @@
             <tr>
                 <td> <?= $hotel['name'] ?> </td> 
                 <td> <?= $hotel['description'] ?> </td>
-                <td> <?= $hotel['parking'] ?> </td>
+                <!-- usare l' if per correggere il valore booleano "tradotto male" -->
+                <td> <?= $hotel['parking'] ? 'si' : 'no' ?> </td>
                 <td> <?= $hotel['vote'] ?></td>
                 <td> <?= $hotel['distance_to_center'] ?></td>
             </tr>

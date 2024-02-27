@@ -45,17 +45,12 @@
     ];
 
     //opzioni filtro per la selezione 
-    $parking_zone = $_GET['parking'] ?? '';
-    $vote_hotel = $_GET['vote'] ?? '';
+    $parking_zone = isset($_GET['parking']) ? $_GET['parking'] : 'all';
+    $vote_hotel = isset($_GET['vote']) ? $_GET['vote'] : 0;
     
-    foreach ($hotels as $hotel) {
-        # code...
-        if ($hotel['parking'] == $parking_zone) {
-            # code...
-            var_dump($hotel['name']);
-        };
-    };
-
     var_dump($vote_hotel);
+    var_dump($parking_zone);
+
+    $hotels = array_filter($hotels, fn($hotel)=> $hotel['vote']>= $vote_hotel );
     
 ?>
