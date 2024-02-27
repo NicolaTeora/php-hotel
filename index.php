@@ -1,5 +1,5 @@
 <!-- collego il file con i dati -->
-<?php require 'data.php' ?>
+<?php require './config/data.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
