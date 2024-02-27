@@ -38,8 +38,8 @@
         <form method="GET" action="./index.php" >
             <select name="parking" id="parking-zone" class="form-select w-25 mt-3">
                 <option selected value= "all">Parcheggio:</option>
-                <option value= true>si</option>
-                <option value= false >no</option>
+                <option value= 'true'>si</option>
+                <option value= 'false' >no</option>
             </select>
             <select name="vote" id="vote_hotel" class="form-select w-25 mt-3">
                 <option selected value= "0">Voto:</option>
