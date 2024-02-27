@@ -51,6 +51,6 @@
     var_dump($vote_hotel);
     var_dump($parking_zone);
 
-    $hotels = array_filter($hotels, fn($hotel)=> $hotel['vote']>= $vote_hotel );
-    
+    $hotels = array_filter($hotels, fn($hotel)=> $hotel['vote'] >= $vote_hotel);
+
 ?>
