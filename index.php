@@ -56,13 +56,7 @@
         
         <!-- stampo in tabella -->
         <table class="table table-striped-columns mt-5" >
-            <tr>
-                <th>Nome</th>
-                <th>Description</th>
-                <th>ParKing</th>
-                <th>Vote</th>
-                <th>Distance to Center</th>
-            </tr>
+            <?php include "./template/table-th-hotel.php"; ?>
             <!-- il ciclo For Each nell'html deve avere una chiusura -->
             <?php foreach ($hotels as $hotel): ?>
                 <?php include "./template/table-hotel.php"; ?>
