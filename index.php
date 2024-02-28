@@ -41,16 +41,16 @@
         <form method="GET" action="./index.php" >
             <select name="parking" id="parking-zone" class="form-select w-25 mt-3">
                 <option selected value= "all">Parcheggio:</option>
-                <option value= 'true'>si</option>
-                <option value= 'false' >no</option>
+                <option <?= $parking_zone === 'true' ? 'selected' : '' ?> value= 'true'>si</option>
+                <option <?= $parking_zone === 'false' ? 'selected' : '' ?> value= 'false' >no</option>
             </select>
             <select name="vote" id="vote_hotel" class="form-select w-25 mt-3">
-                <option selected value= "0">Voto:</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value= "0">Voto:</option>
+                <option <?= $vote_hotel === '1' ? 'selected' : '' ?> value="1">1</option>
+                <option <?= $vote_hotel === '2' ? 'selected' : '' ?> value="2">2</option>
+                <option <?= $vote_hotel === '3' ? 'selected' : '' ?> value="3">3</option>
+                <option <?= $vote_hotel === '4' ? 'selected' : '' ?> value="4">4</option>
+                <option <?= $vote_hotel === '5' ? 'selected' : '' ?> value="5">5</option>
             </select>
 
             <button type="submit" class="btn btn-success">Cerca</button>
