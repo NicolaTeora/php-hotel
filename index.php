@@ -1,5 +1,8 @@
 <!-- collego il file con i dati -->
-<?php require './config/data.php' ?>
+<?php 
+    require __DIR__ . '/config/data.php';
+    require __DIR__ . '/config/init.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
